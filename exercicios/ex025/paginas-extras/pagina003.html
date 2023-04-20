@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.232);
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        header > h1 {
+            color: red;
+            cursor: pointer;
+        }
+        header > nav {
+            display: flex;
+            gap: 30px;
+            cursor: pointer;
+        }
+        header > nav > a {
+            text-decoration: none;
+            color: black;
+        }
+        header > nav > a:hover {
+            color: brown;
+        }
+        .contato {
+            text-decoration: none;
+            color: black;
+            font-size: 1.3em;
+            border: 1px solid yellow;
+            padding: 5px;
+            border-radius: 15px;
+            width: 100px;
+            text-align: center;
+            transition: all 0.4s ease-in-out;
+        }
+        .contato:hover {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LOGO</h1>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">PERSONAGENS</a>
+            <a href="#">SAIBA MAIS</a>
+        </nav>
+        <a class="contato" href="#">contato</a>
+    </header>
+    <main>
+        <section>
+            <h1>terceira pagina</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates ea, sint nobis temporibus eveniet placeat enim illo qui id perferendis saepe provident. Dolor, reprehenderit? Molestiae, id. Quae, natus. Modi, harum.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos quas exercitationem delectus eveniet expedita fugit, sapiente voluptatum doloremque, dicta vero soluta maiores dolores odit perspiciatis? Delectus voluptates accusamus atque aperiam.</p>
+        </section>
+    </main>
+</body>
+</html>
