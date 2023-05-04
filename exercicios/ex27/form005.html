@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo de formulario</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        .esportes {
+            margin-top: 20px;
+        }
+
+        fieldset {
+            width: 300px;
+            margin: auto;
+        }
+
+        .btn {
+            display:block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>exemplo de formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>sexo</legend>
+            <input type="radio" name="sexo" id="imasc" checked><label for="imasc">Masculino</label><br>
+            <input type="radio" name="sexo" id="ifem" value="Masculino"><label for="ifem">Feminino</label><br>
+            <input type="radio" name="sexo" id="ipne" value="Feminino"><label for="ipne">Prefiro não expecificar</label>
+        </fieldset>
+
+        <fieldset class="esportes">
+            <legend>esportes favoritos</legend>
+            <input type="checkbox" name="fut" id="ifut" checked><label for="ifut">Futebol</label><br>
+            <input type="checkbox" name="basq" id="ibasq"><label for="ibasq">Basquete</label><br>
+            <input type="checkbox" name="vol" id="ivol"><label for="ivol">Volei</label><br>
+            <input type="checkbox" name="han" id="ihan"><label for="ihan">Handebol</label><br>
+            <input type="checkbox" name="jiu" id="ijiu"><label for="ijiu">Jiu Jitsu</label>
+        </fieldset>
+
+        <p>
+            <input class="btn" type="submit" value="enviar">
+            <input class="btn" type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
