@@ -7,16 +7,14 @@
 }
 
 @media print {
-    body {
-       
-    }
+    body {}
 
     main {
         border: 2px solid black;
     }
 
     main::after {
-        content: 'essa impressão foi feita através do site www.cursoemvideo.com';
+content: 'essa impressão foi feita através do site www.cursoemvideo.com';
         text-decoration: overline;
     }
 
@@ -24,7 +22,7 @@
         text-shadow: none;
         color: black;
     }
-    
+
     img#phone {
         display: none;
     }
@@ -85,6 +83,7 @@
     body {
         background-image: url(../imagens/back-pc.jpg);
     }
+
     img#phone {
         display: none;
     }
@@ -110,6 +109,7 @@
     body {
         background-image: url(../imagens/back-tv.jpg);
     }
+
     img#phone {
         display: none;
     }
